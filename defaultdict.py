@@ -17,11 +17,12 @@ class DefaultDict:
     def items(self):
         return self.key_val.items()
 
-freq = DefaultDict(int)
-s = "abbccc122333"
-for c in s:
-    freq[c] += 1
+if __name__ == "__main__":
+    freq = DefaultDict(int)
+    s = "abbccc122333"
+    for c in s:
+        freq[c] += 1
 
-for c, f in freq.items():
-    print(f"Char: {c}, Freq: {f}")
+    for c, f in freq.items():
+        print(f"Char: {c}, Freq: {f}")
 
