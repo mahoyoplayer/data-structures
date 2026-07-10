@@ -9,8 +9,6 @@ def bisect_right(arr: list, val: int):
             r = mid
     return l
 
-
-
 def bisect_left(arr: list, val: int):
     n = len(arr)
     l, r = 0, n
